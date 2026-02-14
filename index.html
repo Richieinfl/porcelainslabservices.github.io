@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Porcelain Slab Services | South Florida's Thin Panel Tile Experts</title>
+<meta name="description" content="South Florida's premier gauged porcelain thin panel installer. Expert installation of showers, feature walls, fireplaces, flooring & commercial projects. Free estimates. Call 954-234-0932.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+--navy:#0C1E2F;--navy-light:#142D44;
+--gold:#C9A96E;--gold-light:#DFC595;--gold-dim:rgba(201,169,110,0.15);
+--cream:#FAF7F2;--cream-dark:#EDE8E0;--white:#fff;
+--text:#3D3D3D;--text-light:#6B6B6B;
+--display:'Cormorant Garamond',Georgia,serif;
+--body:'Montserrat',sans-serif;
+}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);color:var(--text);background:var(--cream);line-height:1.7;font-size:15px;-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+
+/* NAV */
+.nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(12,30,47,0.95);backdrop-filter:blur(20px);border-bottom:1px solid var(--gold-dim)}
+.nav-inner{max-width:1280px;margin:0 auto;padding:0 40px;display:flex;align-items:center;justify-content:space-between;height:80px}
+.nav-logo{display:flex;flex-direction:column;text-decoration:none;gap:2px}
+.nav-logo-main{font-family:var(--display);font-size:22px;font-weight:600;color:var(--white);letter-spacing:2px;text-transform:uppercase;line-height:1.1}
+.nav-logo-sub{font-family:var(--body);font-size:9px;font-weight:500;color:var(--gold);letter-spacing:4px;text-transform:uppercase}
+.nav-links{display:flex;align-items:center;gap:32px;list-style:none}
+.nav-links a{font-size:11px;font-weight:500;color:rgba(255,255,255,.7);text-decoration:none;text-transform:uppercase;letter-spacing:2px;transition:color .3s;position:relative}
+.nav-links a::after{content:'';position:absolute;bottom:-4px;left:0;width:0;height:1px;background:var(--gold);transition:width .3s}
+.nav-links a:hover{color:var(--white)}
+.nav-links a:hover::after{width:100%}
+.nav-cta{background:transparent!important;border:1px solid var(--gold)!important;color:var(--gold)!important;padding:10px 24px!important;cursor:pointer;transition:all .3s!important}
+.nav-cta:hover{background:var(--gold)!important;color:var(--navy)!important}
+.nav-cta::after{display:none!important}
+.nav-toggle{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:10px;background:none;border:none}
+.nav-toggle span{width:24px;height:1.5px;background:var(--white);transition:all .3s}
+.nav-phone{display:none;font-size:11px;color:var(--gold);text-decoration:none;letter-spacing:1px;font-weight:500}
+
+/* HERO */
+.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.hero-bg-img{position:absolute;inset:0;z-index:0}
+.hero-bg-img img{width:100%;height:100%;object-fit:cover}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(12,30,47,.78) 0%,rgba(20,45,68,.5) 50%,rgba(12,30,47,.75) 100%);z-index:1}
+.hero-texture{position:absolute;inset:0;opacity:.03;background-image:url("data:image/svg+xml,%3Csvg width='60' height='60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none'%3E%3Cg fill='%23fff' opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");z-index:2}
+.hero-line{position:absolute;top:0;left:50%;width:1px;height:0;background:linear-gradient(to bottom,transparent,var(--gold));z-index:3;animation:lineGrow 1.5s ease-out .5s forwards}
+@keyframes lineGrow{to{height:120px}}
+.hero-content{position:relative;z-index:10;text-align:center;max-width:880px;padding:0 40px}
+.hero-badge{display:inline-block;font-size:10px;font-weight:600;color:var(--gold);letter-spacing:5px;text-transform:uppercase;margin-bottom:40px;padding:12px 28px;border:1px solid rgba(201,169,110,.3);animation:fadeUp 1s ease-out .8s both}
+.hero h1{font-family:var(--display);font-size:clamp(40px,6vw,76px);font-weight:300;color:var(--white);line-height:1.08;margin-bottom:32px;animation:fadeUp 1s ease-out 1s both}
+.hero h1 em{font-style:italic;color:var(--gold-light)}
+.hero-sub{font-size:15px;font-weight:300;color:rgba(255,255,255,.55);line-height:1.85;max-width:580px;margin:0 auto 48px;animation:fadeUp 1s ease-out 1.2s both}
+.hero-btns{display:flex;gap:20px;justify-content:center;flex-wrap:wrap;animation:fadeUp 1s ease-out 1.4s both}
+@keyframes fadeUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+
+/* BUTTONS */
+.btn{display:inline-block;font-family:var(--body);font-size:11px;font-weight:600;letter-spacing:3px;text-transform:uppercase;text-decoration:none;padding:18px 40px;transition:all .4s;cursor:pointer;border:none}
+.btn-gold{background:var(--gold);color:var(--navy)}
+.btn-gold:hover{background:var(--gold-light);transform:translateY(-2px);box-shadow:0 10px 40px rgba(201,169,110,.3)}
+.btn-outline-w{background:transparent;color:var(--white);border:1px solid rgba(255,255,255,.25)}
+.btn-outline-w:hover{border-color:var(--white);background:rgba(255,255,255,.05)}
+.btn-dark{background:var(--navy);color:var(--white)}
+.btn-dark:hover{background:var(--navy-light);transform:translateY(-2px)}
+
+/* SECTIONS */
+.section{padding:120px 40px}
+.section-inner{max-width:1100px;margin:0 auto}
+.section-label{font-size:10px;font-weight:600;color:var(--gold);letter-spacing:5px;text-transform:uppercase;margin-bottom:20px}
+.section-title{font-family:var(--display);font-size:clamp(32px,4vw,52px);font-weight:400;color:var(--navy);line-height:1.15;margin-bottom:24px}
+.section-sub{font-size:15px;font-weight:300;color:var(--text-light);max-width:600px;line-height:1.85;margin-bottom:60px}
+.page-section{scroll-margin-top:80px}
+
+/* INTRO */
+.intro{background:var(--white);border-bottom:1px solid var(--cream-dark)}
+.intro-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.intro-text p{font-size:15px;color:var(--text);line-height:1.9;margin-bottom:20px}
+.intro-stats{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+.stat{padding:36px;background:var(--cream);position:relative}
+.stat::before{content:'';position:absolute;top:0;left:0;width:40px;height:2px;background:var(--gold)}
+.stat-num{font-family:var(--display);font-size:48px;font-weight:300;color:var(--navy);line-height:1;margin-bottom:8px}
+.stat-lbl{font-size:11px;font-weight:600;color:var(--text-light);letter-spacing:2px;text-transform:uppercase}
+
+/* SERVICES */
+.services{background:var(--cream)}
+.srv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--cream-dark)}
+.srv{background:var(--white);padding:48px 36px;position:relative;transition:all .4s;cursor:pointer;overflow:hidden}
+.srv::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:var(--gold);transform:scaleX(0);transition:transform .4s}
+.srv:hover::after{transform:scaleX(1)}
+.srv:hover{background:var(--cream)}
+.srv-num{font-family:var(--display);font-size:42px;font-weight:300;color:var(--cream-dark);margin-bottom:18px;transition:color .4s}
+.srv:hover .srv-num{color:var(--gold)}
+.srv h3{font-family:var(--display);font-size:24px;font-weight:500;color:var(--navy);margin-bottom:14px;line-height:1.2}
+.srv p{font-size:13.5px;color:var(--text-light);line-height:1.85}
+.srv-link{display:inline-block;margin-top:18px;font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--gold);text-decoration:none;transition:color .3s}
+.srv-link:hover{color:var(--navy)}
+
+/* WHY */
+.why{background:var(--navy);color:var(--white);position:relative;overflow:hidden}
+.why::before{content:'';position:absolute;top:-200px;right:-200px;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(201,169,110,.05) 0%,transparent 70%)}
+.why .section-title{color:var(--white)}
+.why .section-sub{color:rgba(255,255,255,.45)}
+.why-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px}
+.why-item{padding:36px 0;border-top:1px solid rgba(255,255,255,.07)}
+.why-item h3{font-family:var(--display);font-size:26px;font-weight:400;color:var(--gold-light);margin-bottom:14px}
+.why-item p{font-size:14px;color:rgba(255,255,255,.5);line-height:1.9}
+
+/* CERTS */
+.certs{background:var(--white);border-top:1px solid var(--cream-dark);border-bottom:1px solid var(--cream-dark);text-align:center}
+.certs-row{display:flex;justify-content:center;flex-wrap:wrap;gap:40px;margin-top:40px}
+.cert{padding:20px 28px;opacity:.55;transition:opacity .3s}
+.cert:hover{opacity:1}
+.cert-name{font-size:14px;font-weight:600;color:var(--navy);letter-spacing:1px;margin-bottom:4px}
+.cert-type{font-size:10px;color:var(--text-light);letter-spacing:2px;text-transform:uppercase}
+
+/* PROCESS */
+.process{background:var(--cream)}
+.proc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:36px;margin-top:60px}
+.proc{position:relative;padding-top:28px}
+.proc::before{content:'';position:absolute;top:0;left:0;width:100%;height:2px;background:linear-gradient(to right,var(--gold),var(--cream-dark))}
+.proc-num{font-family:var(--display);font-size:52px;font-weight:300;color:var(--cream-dark);line-height:1;margin-bottom:14px}
+.proc h3{font-family:var(--display);font-size:21px;font-weight:500;color:var(--navy);margin-bottom:10px}
+.proc p{font-size:13px;color:var(--text-light);line-height:1.85}
+
+/* ABOUT */
+.about{background:var(--white)}
+.about-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:80px;align-items:start}
+.about-photo{position:relative;overflow:hidden;background:var(--cream)}
+.about-photo img{width:100%;height:auto;display:block}
+.about-photo::after{content:'';position:absolute;bottom:0;left:0;right:0;height:4px;background:var(--gold)}
+.about-content h2{font-family:var(--display);font-size:42px;font-weight:400;color:var(--navy);margin-bottom:24px;line-height:1.15}
+.about-content p{font-size:15px;color:var(--text);line-height:1.9;margin-bottom:18px}
+.timeline{margin-top:36px;border-top:1px solid var(--cream-dark);padding-top:36px}
+.tl-item{display:flex;gap:20px;margin-bottom:20px;align-items:baseline}
+.tl-yr{font-family:var(--display);font-size:20px;font-weight:600;color:var(--gold);min-width:55px}
+.tl-desc{font-size:14px;color:var(--text-light);line-height:1.6}
+
+/* PORTFOLIO */
+.portfolio{background:var(--navy);color:var(--white)}
+.portfolio .section-title{color:var(--white)}
+.portfolio .section-sub{color:rgba(255,255,255,.45)}
+.port-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:3px}
+.port-item{aspect-ratio:4/3;position:relative;overflow:hidden;cursor:pointer}
+.port-item img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.port-item:hover img{transform:scale(1.05)}
+.port-label{position:absolute;bottom:0;left:0;right:0;padding:12px 16px;font-size:10px;font-weight:600;color:var(--white);letter-spacing:2px;text-transform:uppercase;background:linear-gradient(to top,rgba(12,30,47,.8),transparent);z-index:2}
+
+/* BTS */
+.bts{background:var(--cream)}
+.bts-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:3px}
+.bts-item{aspect-ratio:4/3;position:relative;overflow:hidden;cursor:pointer}
+.bts-item img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.bts-item:hover img{transform:scale(1.05)}
+.bts-caption{position:absolute;bottom:0;left:0;right:0;padding:12px 16px;font-size:11px;font-weight:600;color:var(--white);letter-spacing:2px;text-transform:uppercase;background:linear-gradient(to top,rgba(12,30,47,.8),transparent);z-index:2}
+
+/* TESTIMONIALS */
+.testi{background:var(--white);text-align:center}
+.testi-card{max-width:700px;margin:0 auto;padding:40px}
+.testi-quote{font-family:var(--display);font-size:26px;font-weight:300;color:var(--navy);line-height:1.5;font-style:italic;margin-bottom:28px}
+.testi-quote::before{content:'\201C';display:block;font-size:80px;color:var(--gold);line-height:.5;margin-bottom:24px;font-style:normal}
+.testi-note{font-size:13px;color:var(--text-light);margin-top:32px;padding:24px;border:1px dashed var(--cream-dark);font-style:italic;max-width:500px;margin-left:auto;margin-right:auto}
+
+/* AREAS */
+.areas{background:var(--cream)}
+.areas-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:40px}
+.area{padding:18px 20px;background:var(--white);font-size:14px;color:var(--navy);font-weight:500;text-align:center;transition:all .3s}
+.area:hover{background:var(--navy);color:var(--white)}
+
+/* FAQ */
+.faq{background:var(--white)}
+.faq-list{max-width:800px}
+.faq-item{border-bottom:1px solid var(--cream-dark);padding:28px 0;cursor:pointer}
+.faq-q{font-family:var(--display);font-size:21px;font-weight:500;color:var(--navy);display:flex;justify-content:space-between;align-items:center;gap:20px}
+.faq-tog{font-size:24px;color:var(--gold);font-weight:300;transition:transform .3s;flex-shrink:0}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .4s ease,padding .4s ease}
+.faq-a.open{max-height:500px;padding-top:16px}
+.faq-a p{font-size:14px;color:var(--text-light);line-height:1.9}
+
+/* CONTACT */
+.contact{background:var(--navy);color:var(--white)}
+.contact .section-title{color:var(--white)}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;margin-top:60px}
+.contact-info h3{font-family:var(--display);font-size:26px;font-weight:400;color:var(--gold-light);margin-bottom:14px}
+.contact-info>p{font-size:14px;color:rgba(255,255,255,.5);line-height:1.9;margin-bottom:36px}
+.cd{display:flex;align-items:center;gap:16px;margin-bottom:18px}
+.cd-label{font-size:10px;font-weight:600;color:var(--gold);letter-spacing:3px;text-transform:uppercase;min-width:70px}
+.cd-val{font-size:16px;color:var(--white);font-weight:300}
+.cd-val a{color:var(--white);text-decoration:none;border-bottom:1px solid rgba(255,255,255,.2);transition:border-color .3s}
+.cd-val a:hover{border-color:var(--gold)}
+.contact-form{display:flex;flex-direction:column;gap:18px}
+.fg{display:flex;flex-direction:column;gap:6px}
+.f-row{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.fg label{font-size:10px;font-weight:600;color:var(--gold);letter-spacing:2px;text-transform:uppercase}
+.fg input,.fg select,.fg textarea{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);color:var(--white);font-family:var(--body);font-size:14px;padding:14px 16px;outline:none;transition:border-color .3s}
+.fg input::placeholder,.fg textarea::placeholder{color:rgba(255,255,255,.22)}
+.fg input:focus,.fg select:focus,.fg textarea:focus{border-color:var(--gold)}
+.fg select{cursor:pointer}.fg select option{background:var(--navy);color:var(--white)}
+.fg textarea{resize:vertical;min-height:110px}
+
+/* FOOTER */
+.footer{background:#080F17;padding:80px 40px 40px}
+.footer-inner{max-width:1100px;margin:0 auto}
+.footer-top{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:50px;padding-bottom:60px;border-bottom:1px solid rgba(255,255,255,.06)}
+.footer-brand p{font-size:13px;color:rgba(255,255,255,.3);line-height:1.8;max-width:280px;margin-top:16px}
+.footer-col h4{font-size:10px;font-weight:600;color:var(--gold);letter-spacing:3px;text-transform:uppercase;margin-bottom:22px}
+.footer-col ul{list-style:none}
+.footer-col li{margin-bottom:11px}
+.footer-col a{font-size:13px;color:rgba(255,255,255,.35);text-decoration:none;transition:color .3s}
+.footer-col a:hover{color:var(--white)}
+.footer-bottom{padding-top:30px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px}
+.footer-bottom p{font-size:11px;color:rgba(255,255,255,.18)}
+
+/* RESPONSIVE */
+@media(max-width:1024px){
+.intro-grid{grid-template-columns:1fr;gap:50px}
+.srv-grid{grid-template-columns:repeat(2,1fr)}
+.why-grid{grid-template-columns:1fr}
+.about-grid{grid-template-columns:1fr;gap:40px}
+.proc-grid{grid-template-columns:repeat(2,1fr)}
+.contact-grid{grid-template-columns:1fr;gap:50px}
+.footer-top{grid-template-columns:1fr 1fr;gap:36px}
+.areas-grid{grid-template-columns:repeat(3,1fr)}
+}
+@media(max-width:768px){
+.section{padding:80px 24px}
+.nav-inner{padding:0 20px}
+.nav-links{display:none}
+.nav-links.open{display:flex;flex-direction:column;position:absolute;top:80px;left:0;right:0;background:rgba(12,30,47,.98);padding:32px 24px;gap:20px;border-bottom:1px solid var(--gold-dim)}
+.nav-toggle{display:flex}
+.nav-phone{display:block}
+.hero-content{padding:0 20px}
+.hero h1{font-size:clamp(34px,8vw,56px)}
+.srv-grid{grid-template-columns:1fr}
+.port-grid{grid-template-columns:repeat(2,1fr)}
+.bts-grid{grid-template-columns:repeat(2,1fr)}
+.intro-stats{grid-template-columns:1fr 1fr;gap:12px}
+.stat{padding:24px}.stat-num{font-size:36px}
+.proc-grid{grid-template-columns:1fr}
+.areas-grid{grid-template-columns:1fr 1fr}
+.f-row{grid-template-columns:1fr}
+.footer-top{grid-template-columns:1fr;gap:32px}
+.hero-btns{flex-direction:column;align-items:center}
+.footer-bottom{flex-direction:column;text-align:center}
+}
+
+/* ANIMATIONS */
+.reveal{opacity:0;transform:translateY(35px);transition:opacity .7s ease,transform .7s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+<div class="nav-inner">
+  <a href="#" class="nav-logo"><span class="nav-logo-main">Porcelain Slab</span><span class="nav-logo-sub">Services</span></a>
+  <a href="tel:9542340932" class="nav-phone">954-234-0932</a>
+  <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu"><span></span><span></span><span></span></button>
+  <ul class="nav-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#portfolio">Portfolio</a></li>
+    <li><a href="#faq">FAQ</a></li>
+    <li><a href="#contact" class="nav-cta">Free Estimate</a></li>
+  </ul>
+</div>
+</nav>
+
+<section class="hero">
+  <div class="hero-bg-img"><img src="images/fireplace-finished.jpg" alt="Porcelain slab fireplace installation in South Florida"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-texture"></div>
+  <div class="hero-line"></div>
+  <div class="hero-content">
+    <div class="hero-badge">Certified &bull; Insured &bull; Since 1987</div>
+    <h1>South Florida's Gauged Porcelain <em>Thin Panel</em> Specialists</h1>
+    <p class="hero-sub">Precision installation of large format porcelain panels for showers, feature walls, fireplaces, flooring, and commercial spaces. Seven manufacturer certifications. Nearly four decades of expertise.</p>
+    <div class="hero-btns">
+      <a href="#contact" class="btn btn-gold">Get a Free Estimate</a>
+      <a href="#portfolio" class="btn btn-outline-w">View Our Work</a>
+    </div>
+  </div>
+</section>
+
+<section class="section intro">
+<div class="section-inner"><div class="intro-grid">
+  <div class="intro-text reveal">
+    <div class="section-label">Who We Are</div>
+    <h2 class="section-title">The Expert Behind<br>Every Panel</h2>
+    <p>Porcelain Slab Services is South Florida's dedicated specialist in gauged porcelain thin panel installation. Led by Rich Smith &mdash; a tile industry professional with nearly four decades of experience &mdash; we bring precision, clear communication, and unmatched attention to detail to every project.</p>
+    <p>These ultra-thin, large format panels deliver the beauty of natural stone with superior durability and a seamless aesthetic that traditional tile cannot match. But installing them requires specialized training, purpose-built tools, and experience that most tile contractors simply don't have.</p>
+    <p>With manufacturer certifications from Laminam, Atlas Concorde, StonePeak, and Dekton &mdash; plus advanced training from Tile Nation and the NTCA &mdash; we are the contractor that designers, architects, and discerning homeowners trust when the material demands an expert.</p>
+  </div>
+  <div class="intro-stats reveal">
+    <div class="stat"><div class="stat-num">38+</div><div class="stat-lbl">Years in Industry</div></div>
+    <div class="stat"><div class="stat-num">7</div><div class="stat-lbl">Manufacturer Certs</div></div>
+    <div class="stat"><div class="stat-num">230+</div><div class="stat-lbl">Panels &mdash; One Project</div></div>
+    <div class="stat"><div class="stat-num">3</div><div class="stat-lbl">Counties Served</div></div>
+  </div>
+</div></div>
+</section>
+
+<section class="section services page-section" id="services">
+<div class="section-inner">
+<div class="section-label reveal">What We Do</div>
+<h2 class="section-title reveal">Installation Services</h2>
+<p class="section-sub reveal">Every service backed by manufacturer certifications, advanced training, and the precision that comes from nearly 40 years in the trade.</p>
+<div class="srv-grid reveal">
+  <div class="srv"><div class="srv-num">01</div><h3>Porcelain Slab Showers</h3><p>Seamless porcelain panel shower walls that eliminate grout lines and transform your bathroom into a spa-like retreat. Full waterproof system &mdash; Schluter and Laticrete certified.</p><a href="#contact" class="srv-link">Learn More &rarr;</a></div>
+  <div class="srv"><div class="srv-num">02</div><h3>Feature Walls</h3><p>Dramatic large format porcelain accent walls for living rooms, dining areas, entryways, and bedrooms. Single-slab statements that define a room.</p><a href="#contact" class="srv-link">Learn More &rarr;</a></div>
+  <div class="srv"><div class="srv-num">03</div><h3>Fireplace Surrounds</h3><p>Stunning porcelain slab fireplace surrounds that become the centerpiece of any room. Heat-resistant, stain-proof, zero maintenance.</p><a href="#contact" class="srv-link">Learn More &rarr;</a></div>
+  <div class="srv"><div class="srv-num">04</div><h3>Large Format Flooring</h3><p>Expansive porcelain floor installations with minimal grout lines. A clean, modern look that flows seamlessly from room to room.</p><a href="#contact" class="srv-link">Learn More &rarr;</a></div>
+  <div class="srv"><div class="srv-num">05</div><h3>Commercial Spaces</h3><p>Hotels, restaurants, offices, retail, and lobbies. The same precision and quality we deliver residentially &mdash; with the crew capacity for large-scale projects.</p><a href="#contact" class="srv-link">Learn More &rarr;</a></div>
+  <div class="srv"><div class="srv-num">06</div><h3>Exterior Applications</h3><p>Exploring porcelain panels for exterior facades or outdoor living spaces? Contact us to discuss your project and explore the possibilities.</p><a href="#contact" class="srv-link">Inquire &rarr;</a></div>
+</div>
+</div>
+</section>
+
+<section class="section why">
+<div class="section-inner">
+<div class="section-label reveal">The Difference</div>
+<h2 class="section-title reveal">Why Porcelain Slab Services</h2>
+<p class="section-sub reveal">This isn't a side job. It's our sole focus &mdash; and that makes all the difference.</p>
+<div class="why-grid">
+  <div class="why-item reveal"><h3>Nearly Four Decades of Expertise</h3><p>Rich Smith entered the marble and granite industry in 1987. After mastering natural stone fabrication, he transitioned to tile and bathroom remodeling, then recognized the future of the industry in 2016 when he began specialized gauged porcelain panel training at the Crossville plant in Tennessee &mdash; years before most contractors had ever seen the material.</p></div>
+  <div class="why-item reveal"><h3>Seven Manufacturer Certifications</h3><p>We don't just install porcelain panels &mdash; we're certified by the manufacturers who make them. Laminam, Atlas Concorde, StonePeak, Dekton, Schluter Systems, Laticrete, and Sicis. We install to the exact specifications the manufacturers intended, protecting your investment for decades.</p></div>
+  <div class="why-item reveal"><h3>Complete System Expertise</h3><p>Most contractors focus only on the finish tile. We're certified in the complete installation system &mdash; from the waterproofing membrane and substrate through the final panel. Every layer is installed to manufacturer standards. That's the difference between a tile job and a system built to last.</p></div>
+  <div class="why-item reveal"><h3>Precision. Communication. Detail.</h3><p>Every cut is measured twice. Every layout is planned before a panel is touched. We walk you through the process before work begins, provide clear timelines, and keep you informed at every step. Our attention to detail shows in every mitered edge, every seamless joint, every flawless surface.</p></div>
+</div>
+</div>
+</section>
+
+<section class="section certs">
+<div class="section-inner">
+<div class="section-label reveal">Credentials</div>
+<h2 class="section-title reveal" style="text-align:center">Certified By the Best</h2>
+<div class="certs-row reveal">
+  <div class="cert"><div class="cert-name">Laminam</div><div class="cert-type">Manufacturer Certified</div></div>
+  <div class="cert"><div class="cert-name">Atlas Concorde</div><div class="cert-type">Manufacturer Certified</div></div>
+  <div class="cert"><div class="cert-name">StonePeak</div><div class="cert-type">Manufacturer Certified</div></div>
+  <div class="cert"><div class="cert-name">Dekton</div><div class="cert-type">Manufacturer Certified</div></div>
+  <div class="cert"><div class="cert-name">Schluter Systems</div><div class="cert-type">Waterproofing &amp; Substrate</div></div>
+  <div class="cert"><div class="cert-name">Laticrete</div><div class="cert-type">Waterproofing &amp; Substrate</div></div>
+  <div class="cert"><div class="cert-name">NTCA</div><div class="cert-type">Member &bull; Multiple Certs</div></div>
+</div>
+</div>
+</section>
+
+<section class="section process">
+<div class="section-inner">
+<div class="section-label reveal">How We Work</div>
+<h2 class="section-title reveal">Our Process</h2>
+<div class="proc-grid">
+  <div class="proc reveal"><div class="proc-num">01</div><h3>Consultation</h3><p>We discuss your vision, review plans or photos, and provide a detailed estimate. No pressure &mdash; just an honest conversation about your project.</p></div>
+  <div class="proc reveal"><div class="proc-num">02</div><h3>Planning &amp; Layout</h3><p>Before a single cut is made, we plan every detail &mdash; panel placement, seam locations, vein matching, and material requirements. Nothing is left to chance.</p></div>
+  <div class="proc reveal"><div class="proc-num">03</div><h3>Expert Installation</h3><p>Using manufacturer-specified tools, adhesives, and techniques, we install every panel with the precision and care these premium materials demand.</p></div>
+  <div class="proc reveal"><div class="proc-num">04</div><h3>Final Walkthrough</h3><p>We walk you through every detail of the completed work, ensure your complete satisfaction, and leave your space cleaner than we found it.</p></div>
+</div>
+</div>
+</section>
+
+<section class="section about page-section" id="about">
+<div class="section-inner"><div class="about-grid">
+  <div class="about-photo reveal"><img src="images/rich-smith-about.jpg" alt="Rich Smith with large format porcelain panel showing scale"></div>
+  <div class="about-content reveal">
+    <div class="section-label">About Rich Smith</div>
+    <h2>The Man Behind<br>the Panels</h2>
+    <p>Rich Smith didn't just wake up one day and decide to install porcelain panels. His path to becoming South Florida's premier gauged porcelain thin panel specialist started nearly four decades ago &mdash; and every step built the foundation for the precision and expertise he brings to your project today.</p>
+    <p>It started in 1987, when Rich entered the marble and granite industry. Drawing on the discipline and work ethic he developed in the restaurant industry &mdash; where he started working at age 13 and eventually became a corporate trainer for a restaurant group in 1992 &mdash; Rich brought a unique combination of skills to the trades. As a corporate trainer, he trained up to 150 employees at a time and helped open 25 franchise restaurants, including three international locations in Israel, Cyprus, and Canada. That experience in leadership, communication, and managing complex operations translated directly into how he runs projects today.</p>
+    <p>In August 2016, everything changed. Rich traveled to the Crossville plant in Tennessee for his first training in gauged porcelain tile panels. He saw the future of the industry and committed to mastering it before most contractors had even seen the material.</p>
+    <div class="timeline">
+      <div class="tl-item"><span class="tl-yr">1987</span><span class="tl-desc">Entered the marble &amp; granite industry</span></div>
+      <div class="tl-item"><span class="tl-yr">1997</span><span class="tl-desc">Committed full-time to tile &amp; remodeling</span></div>
+      <div class="tl-item"><span class="tl-yr">2006</span><span class="tl-desc">20-year licensed Broward County tile contractor</span></div>
+      <div class="tl-item"><span class="tl-yr">2016</span><span class="tl-desc">First GPTP training at Crossville, Tennessee</span></div>
+      <div class="tl-item"><span class="tl-yr">2016+</span><span class="tl-desc">7 manufacturer certifications &amp; advanced Tile Nation training</span></div>
+    </div>
+  </div>
+</div></div>
+</section>
+
+<section class="section portfolio page-section" id="portfolio">
+<div class="section-inner">
+<div class="section-label reveal">Our Work</div>
+<h2 class="section-title reveal">Project Portfolio</h2>
+<p class="section-sub reveal">A selection of our gauged porcelain panel installations across South Florida.</p>
+<div class="port-grid reveal">
+  <div class="port-item"><img src="images/shower-finished-front.jpg" alt="Porcelain slab shower with LED niche"><span class="port-label">Porcelain Slab Shower</span></div>
+  <div class="port-item"><img src="images/boardroom-finished.jpg" alt="Commercial boardroom with dark marble porcelain feature wall"><span class="port-label">Commercial Boardroom</span></div>
+  <div class="port-item"><img src="images/fireplace-finished.jpg" alt="Completed porcelain slab fireplace with linear fire"><span class="port-label">Fireplace &mdash; Completed</span></div>
+  <div class="port-item"><img src="images/bookmatched-wall-wide.jpg" alt="Bookmatched Calacatta porcelain feature wall"><span class="port-label">Bookmatched Feature Wall</span></div>
+  <div class="port-item"><img src="images/fireplace-shelves-front.jpg" alt="Porcelain slab fireplace with built-in shelving"><span class="port-label">Fireplace &amp; Built-Ins</span></div>
+  <div class="port-item"><img src="images/feature-wall-finished.jpg" alt="Completed marble-look porcelain feature wall"><span class="port-label">Feature Wall &mdash; Completed</span></div>
+  <div class="port-item"><img src="images/bookmatched-wall-angle.jpg" alt="Bookmatched porcelain wall detail angle"><span class="port-label">Bookmatched &mdash; Detail</span></div>
+  <div class="port-item"><img src="images/fireplace-shelves-angle.jpg" alt="Porcelain fireplace side angle with LED shelving"><span class="port-label">Fireplace &mdash; Side View</span></div>
+  <div class="port-item"><img src="images/lobby-blue-led.jpg" alt="Elevator lobby with LED lighting and porcelain panels"><span class="port-label">LED Elevator Lobby</span></div>
+  <div class="port-item"><img src="images/elevator-lobby-finished.jpg" alt="Finished commercial elevator lobby with porcelain floors"><span class="port-label">Elevator Lobby &mdash; Floors</span></div>
+  <div class="port-item"><img src="images/elevator-perforated.jpg" alt="Perforated porcelain accent wall with LED backlighting"><span class="port-label">Perforated Accent Wall</span></div>
+  <div class="port-item"><img src="images/bathroom-complete.jpg" alt="Complete residential bathroom with bookmatched porcelain shower"><span class="port-label">Bathroom &mdash; Full Remodel</span></div>
+  <div class="port-item"><img src="images/shower-finished-side.jpg" alt="Porcelain slab shower side angle with LED niche"><span class="port-label">Shower &mdash; LED Niche</span></div>
+  <div class="port-item"><img src="images/boardroom-seam-detail.jpg" alt="Bookmatched dark porcelain seam detail"><span class="port-label">Bookmatched Seam Detail</span></div>
+  <div class="port-item"><img src="images/boardroom-wide.jpg" alt="Wide view of completed commercial boardroom"><span class="port-label">Boardroom &mdash; Wide View</span></div>
+</div>
+</div>
+</section>
+
+<section class="section bts">
+<div class="section-inner">
+<div class="section-label reveal">Behind the Scenes</div>
+<h2 class="section-title reveal">The Work Behind the Beauty</h2>
+<p class="section-sub reveal">Every stunning installation starts with meticulous preparation, specialized tools, and expert handling of materials worth thousands per panel.</p>
+<div class="bts-grid reveal">
+  <div class="bts-item"><img src="images/rich-measuring-panels.jpg" alt="Rich Smith measuring porcelain panels"><div class="bts-caption">Measuring &amp; Layout</div></div>
+  <div class="bts-item"><img src="images/rich-troweling.jpg" alt="Applying adhesive to porcelain panel"><div class="bts-caption">Adhesive Application</div></div>
+  <div class="bts-item"><img src="images/feature-wall-progress1.jpg" alt="Feature wall substrate preparation"><div class="bts-caption">Wall Preparation</div></div>
+  <div class="bts-item"><img src="images/feature-wall-clips.jpg" alt="Porcelain panels with leveling system"><div class="bts-caption">Precision Leveling</div></div>
+  <div class="bts-item"><img src="images/boardroom-cutting.jpg" alt="Cutting dark porcelain panel with rail saw"><div class="bts-caption">Precision Cutting</div></div>
+  <div class="bts-item"><img src="images/nero-panel-crate.jpg" alt="Dark marble porcelain panel being uncrated"><div class="bts-caption">Panel Uncrating</div></div>
+</div>
+</div>
+</section>
+
+<section class="section testi">
+<div class="section-inner">
+<div class="section-label reveal">Client Experiences</div>
+<h2 class="section-title reveal">What Our Clients Say</h2>
+<div class="testi-card reveal">
+  <div class="testi-quote">The quality speaks for itself. We let our work &mdash; and our clients &mdash; do the talking.</div>
+  <p class="testi-note">Client testimonials coming soon. After your next completed project, ask your client for a quick quote about their experience.</p>
+</div>
+</div>
+</section>
+
+<section class="section areas">
+<div class="section-inner">
+<div class="section-label reveal">Where We Work</div>
+<h2 class="section-title reveal">Serving South Florida's Finest Homes</h2>
+<p class="section-sub reveal">Proudly serving luxury residential and commercial properties across three counties.</p>
+<div class="areas-grid reveal">
+  <div class="area">Fort Lauderdale</div><div class="area">Miami</div><div class="area">Miami Beach</div><div class="area">Boca Raton</div>
+  <div class="area">Palm Beach</div><div class="area">Weston</div><div class="area">Parkland</div><div class="area">Coral Gables</div>
+  <div class="area">West Palm Beach</div><div class="area">Key Biscayne</div><div class="area">Lighthouse Point</div><div class="area">Hillsboro Beach</div>
+</div>
+</div>
+</section>
+
+<section class="section faq page-section" id="faq">
+<div class="section-inner">
+<div class="section-label reveal">Common Questions</div>
+<h2 class="section-title reveal">Frequently Asked Questions</h2>
+<div class="faq-list">
+  <div class="faq-item reveal" onclick="this.querySelector('.faq-a').classList.toggle('open');this.querySelector('.faq-tog').style.transform=this.querySelector('.faq-a').classList.contains('open')?'rotate(45deg)':'rotate(0)'"><div class="faq-q">What are gauged porcelain tile panels?<span class="faq-tog">+</span></div><div class="faq-a"><p>Gauged porcelain tile panels (GPTP) are large format, ultra-thin porcelain surfaces typically 3&ndash;6mm thick. They come in massive sizes &mdash; up to 5&times;10 feet &mdash; and replicate the look of marble, stone, concrete, and other materials with superior durability and zero maintenance.</p></div></div>
+  <div class="faq-item reveal" onclick="this.querySelector('.faq-a').classList.toggle('open');this.querySelector('.faq-tog').style.transform=this.querySelector('.faq-a').classList.contains('open')?'rotate(45deg)':'rotate(0)'"><div class="faq-q">Why can't any tile contractor install these?<span class="faq-tog">+</span></div><div class="faq-a"><p>Gauged porcelain panels require specialized training, tools, and techniques that differ significantly from standard tile. The panels are thin, extremely large, and expensive &mdash; a single mishandled panel can be a costly mistake. Proper installation requires manufacturer-specific adhesives, substrate preparation, and handling methods most contractors have never been trained on.</p></div></div>
+  <div class="faq-item reveal" onclick="this.querySelector('.faq-a').classList.toggle('open');this.querySelector('.faq-tog').style.transform=this.querySelector('.faq-a').classList.contains('open')?'rotate(45deg)':'rotate(0)'"><div class="faq-q">What certifications do you hold?<span class="faq-tog">+</span></div><div class="faq-a"><p>Rich Smith holds manufacturer certifications from Laminam, Atlas Concorde, StonePeak, Dekton, Schluter Systems, Laticrete, and Sicis Glass Panels. He is an NTCA member with multiple certifications, and has completed advanced training at both the Crossville plant in Tennessee and Tile Nation in Nebraska.</p></div></div>
+  <div class="faq-item reveal" onclick="this.querySelector('.faq-a').classList.toggle('open');this.querySelector('.faq-tog').style.transform=this.querySelector('.faq-a').classList.contains('open')?'rotate(45deg)':'rotate(0)'"><div class="faq-q">How do porcelain panels compare to natural marble?<span class="faq-tog">+</span></div><div class="faq-a"><p>Porcelain panels replicate the look of natural marble with remarkable accuracy while offering significant advantages: non-porous (no sealing required), stain resistant, scratch resistant, UV resistant, heat resistant, and lighter weight. Natural marble requires regular sealing and can stain and etch.</p></div></div>
+  <div class="faq-item reveal" onclick="this.querySelector('.faq-a').classList.toggle('open');this.querySelector('.faq-tog').style.transform=this.querySelector('.faq-a').classList.contains('open')?'rotate(45deg)':'rotate(0)'"><div class="faq-q">Do porcelain panels require maintenance?<span class="faq-tog">+</span></div><div class="faq-a"><p>Virtually none. Porcelain panels are non-porous and never need sealing. They resist stains, mold, mildew, and bacteria &mdash; making them especially well-suited for showers and South Florida's humid climate.</p></div></div>
+  <div class="faq-item reveal" onclick="this.querySelector('.faq-a').classList.toggle('open');this.querySelector('.faq-tog').style.transform=this.querySelector('.faq-a').classList.contains('open')?'rotate(45deg)':'rotate(0)'"><div class="faq-q">How long does installation take?<span class="faq-tog">+</span></div><div class="faq-a"><p>Timeline varies by scope. A feature wall or fireplace surround might take 1&ndash;2 days. A full shower including waterproofing typically takes 3&ndash;5 days. We provide a clear timeline during the estimate process.</p></div></div>
+  <div class="faq-item reveal" onclick="this.querySelector('.faq-a').classList.toggle('open');this.querySelector('.faq-tog').style.transform=this.querySelector('.faq-a').classList.contains('open')?'rotate(45deg)':'rotate(0)'"><div class="faq-q">What areas do you serve?<span class="faq-tog">+</span></div><div class="faq-a"><p>We serve all of South Florida including Miami-Dade, Broward, and Palm Beach counties. Primary areas include Fort Lauderdale, Weston, Parkland, Boca Raton, Palm Beach, Miami, Miami Beach, Coral Gables, and waterfront communities along the Intracoastal.</p></div></div>
+  <div class="faq-item reveal" onclick="this.querySelector('.faq-a').classList.toggle('open');this.querySelector('.faq-tog').style.transform=this.querySelector('.faq-a').classList.contains('open')?'rotate(45deg)':'rotate(0)'"><div class="faq-q">How do I get a quote?<span class="faq-tog">+</span></div><div class="faq-a"><p>Call us at 954-234-0932 or fill out the contact form below. We'll discuss your project, review any plans or photos, and provide a detailed estimate. Consultations are always free.</p></div></div>
+</div>
+</div>
+</section>
+
+<section class="section contact page-section" id="contact">
+<div class="section-inner">
+<div class="section-label reveal">Get Started</div>
+<h2 class="section-title reveal">Let's Talk About Your Project</h2>
+<div class="contact-grid">
+  <div class="contact-info reveal">
+    <h3>Every Installation Begins<br>With a Conversation</h3>
+    <p>Whether you're a homeowner with a vision, a designer with a spec, or a builder with a timeline &mdash; we'd love to hear about your project.</p>
+    <div class="cd"><span class="cd-label">Call</span><span class="cd-val"><a href="tel:9542340932">954-234-0932</a></span></div>
+    <div class="cd"><span class="cd-label">Email</span><span class="cd-val"><a href="mailto:info@porcelainslabservices.com">info@porcelainslabservices.com</a></span></div>
+    <div class="cd"><span class="cd-label">Serving</span><span class="cd-val">Miami-Dade, Broward &amp; Palm Beach Counties</span></div>
+    <div style="margin-top:40px;padding-top:36px;border-top:1px solid rgba(255,255,255,.07)">
+      <h3>What to Expect</h3>
+      <p>Submit your request and we'll respond within one business day. We'll schedule a call or site visit to discuss your vision, review the space, and answer questions. You'll receive a detailed estimate with scope, timeline, and pricing.</p>
+    </div>
+  </div>
+  <form class="contact-form reveal" onsubmit="event.preventDefault();alert('Thank you! We will be in touch within 24 hours.');">
+    <div class="f-row"><div class="fg"><label>Name</label><input type="text" placeholder="Your name" required></div><div class="fg"><label>Phone</label><input type="tel" placeholder="(555) 555-5555" required></div></div>
+    <div class="fg"><label>Email</label><input type="email" placeholder="your@email.com" required></div>
+    <div class="f-row"><div class="fg"><label>I Am A</label><select required><option value="">Select one...</option><option>Homeowner</option><option>Interior Designer</option><option>Architect</option><option>Builder / GC</option><option>Property Manager</option><option>Other</option></select></div><div class="fg"><label>Project Type</label><select required><option value="">Select one...</option><option>Shower</option><option>Feature Wall</option><option>Fireplace</option><option>Flooring</option><option>Commercial</option><option>Multiple Areas</option><option>Other</option></select></div></div>
+    <div class="fg"><label>City or Zip Code</label><input type="text" placeholder="e.g. Fort Lauderdale or 33308" required></div>
+    <div class="fg"><label>Tell Us About Your Project</label><textarea placeholder="Describe your project, timeline, materials..."></textarea></div>
+    <div><button type="submit" class="btn btn-gold" style="width:100%;text-align:center">Request My Free Estimate</button></div>
+  </form>
+</div>
+</div>
+</section>
+
+<footer class="footer">
+<div class="footer-inner">
+<div class="footer-top">
+  <div class="footer-brand"><a href="#" class="nav-logo"><span class="nav-logo-main">Porcelain Slab</span><span class="nav-logo-sub">Services</span></a><p>South Florida's premier gauged porcelain thin panel installation specialists. Precision, communication, and attention to detail on every project.</p></div>
+  <div class="footer-col"><h4>Services</h4><ul><li><a href="#services">Showers</a></li><li><a href="#services">Feature Walls</a></li><li><a href="#services">Fireplaces</a></li><li><a href="#services">Flooring</a></li><li><a href="#services">Commercial</a></li></ul></div>
+  <div class="footer-col"><h4>Company</h4><ul><li><a href="#about">About Rich Smith</a></li><li><a href="#portfolio">Portfolio</a></li><li><a href="#faq">FAQ</a></li><li><a href="#contact">Contact</a></li></ul></div>
+  <div class="footer-col"><h4>Contact</h4><ul><li><a href="tel:9542340932">954-234-0932</a></li><li><a href="mailto:info@porcelainslabservices.com">info@porcelain<br>slabservices.com</a></li><li><a href="#contact">Free Estimate</a></li></ul></div>
+</div>
+<div class="footer-bottom"><p>&copy; 2026 Porcelain Slab Services. Rich Smith Enterprises, Inc. All rights reserved.</p><p>Licensed &amp; Insured &bull; NTCA Member</p></div>
+</div>
+</footer>
+
+<script>
+const obs=new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target)}})},{threshold:0.1});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+</script>
+</body>
+</html>
