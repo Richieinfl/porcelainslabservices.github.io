@@ -40,19 +40,19 @@ img{max-width:100%;height:auto;display:block}
 .nav-phone{display:none;font-size:11px;color:var(--gold);text-decoration:none;letter-spacing:1px;font-weight:500}
 
 /* HERO */
-.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;background:#0C1E2F}
 .hero-bg-img{position:absolute;inset:0;z-index:0}
 .hero-bg-img img{width:100%;height:100%;object-fit:cover}
 .hero-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(12,30,47,.78) 0%,rgba(20,45,68,.5) 50%,rgba(12,30,47,.75) 100%);z-index:1}
 .hero-texture{position:absolute;inset:0;opacity:.03;background-image:url("data:image/svg+xml,%3Csvg width='60' height='60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none'%3E%3Cg fill='%23fff' opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");z-index:2}
-.hero-line{position:absolute;top:0;left:50%;width:1px;height:0;background:linear-gradient(to bottom,transparent,var(--gold));z-index:3;animation:lineGrow 1.5s ease-out .5s forwards}
+.hero-line{position:absolute;top:0;left:50%;width:1px;height:0;background:linear-gradient(to bottom,transparent,var(--gold));z-index:3;}
 @keyframes lineGrow{to{height:120px}}
 .hero-content{position:relative;z-index:10;text-align:center;max-width:880px;padding:0 40px}
-.hero-badge{display:inline-block;font-size:10px;font-weight:600;color:var(--gold);letter-spacing:5px;text-transform:uppercase;margin-bottom:40px;padding:12px 28px;border:1px solid rgba(201,169,110,.3);animation:fadeUp 1s ease-out .8s both}
-.hero h1{font-family:var(--display);font-size:clamp(40px,6vw,76px);font-weight:300;color:var(--white);line-height:1.08;margin-bottom:32px;animation:fadeUp 1s ease-out 1s both}
+.hero-badge{display:inline-block;font-size:10px;font-weight:600;color:var(--gold);letter-spacing:5px;text-transform:uppercase;margin-bottom:40px;padding:12px 28px;border:1px solid rgba(201,169,110,.3);}
+.hero h1{font-family:var(--display);font-size:clamp(40px,6vw,76px);font-weight:300;color:var(--white);line-height:1.08;margin-bottom:32px;}
 .hero h1 em{font-style:italic;color:var(--gold-light)}
-.hero-sub{font-size:15px;font-weight:300;color:rgba(255,255,255,.55);line-height:1.85;max-width:580px;margin:0 auto 48px;animation:fadeUp 1s ease-out 1.2s both}
-.hero-btns{display:flex;gap:20px;justify-content:center;flex-wrap:wrap;animation:fadeUp 1s ease-out 1.4s both}
+.hero-sub{font-size:15px;font-weight:300;color:rgba(255,255,255,.55);line-height:1.85;max-width:580px;margin:0 auto 48px;}
+.hero-btns{display:flex;gap:20px;justify-content:center;flex-wrap:wrap;}
 @keyframes fadeUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
 
 /* BUTTONS */
@@ -246,7 +246,7 @@ img{max-width:100%;height:auto;display:block}
 
 /* ANIMATIONS */
 .reveal{opacity:0;transform:translateY(35px);transition:opacity .7s ease,transform .7s ease}
-.reveal.visible{opacity:1;transform:translateY(0)}
+.reveal.visible{opacity:1;transform:none}
 </style>
 </head>
 <body>
@@ -470,7 +470,7 @@ img{max-width:100%;height:auto;display:block}
     <h3>Every Installation Begins<br>With a Conversation</h3>
     <p>Whether you're a homeowner with a vision, a designer with a spec, or a builder with a timeline &mdash; we'd love to hear about your project.</p>
     <div class="cd"><span class="cd-label">Call</span><span class="cd-val"><a href="tel:9542340932">954-234-0932</a></span></div>
-    <div class="cd"><span class="cd-label">Email</span><span class="cd-val"><a href="mailto:info@porcelainslabservices.com">info@porcelainslabservices.com</a></span></div>
+    <div class="cd"><span class="cd-label">Email</span><span class="cd-val"><a href="/cdn-cgi/l/email-protection#442d2a222b04342b36272128252d2a37282526372136322d2721376a272b29"><span class="__cf_email__" data-cfemail="2a43444c456a5a4558494f464b434459464b48594f585c43494f5904494547">[email&#160;protected]</span></a></span></div>
     <div class="cd"><span class="cd-label">Serving</span><span class="cd-val">Miami-Dade, Broward &amp; Palm Beach Counties</span></div>
     <div style="margin-top:40px;padding-top:36px;border-top:1px solid rgba(255,255,255,.07)">
       <h3>What to Expect</h3>
@@ -495,15 +495,10 @@ img{max-width:100%;height:auto;display:block}
   <div class="footer-brand"><a href="#" class="nav-logo"><span class="nav-logo-main">Porcelain Slab</span><span class="nav-logo-sub">Services</span></a><p>South Florida's premier gauged porcelain thin panel installation specialists. Precision, communication, and attention to detail on every project.</p></div>
   <div class="footer-col"><h4>Services</h4><ul><li><a href="#services">Showers</a></li><li><a href="#services">Feature Walls</a></li><li><a href="#services">Fireplaces</a></li><li><a href="#services">Flooring</a></li><li><a href="#services">Commercial</a></li></ul></div>
   <div class="footer-col"><h4>Company</h4><ul><li><a href="#about">About Rich Smith</a></li><li><a href="#portfolio">Portfolio</a></li><li><a href="#faq">FAQ</a></li><li><a href="#contact">Contact</a></li></ul></div>
-  <div class="footer-col"><h4>Contact</h4><ul><li><a href="tel:9542340932">954-234-0932</a></li><li><a href="mailto:info@porcelainslabservices.com">info@porcelain<br>slabservices.com</a></li><li><a href="#contact">Free Estimate</a></li></ul></div>
+  <div class="footer-col"><h4>Contact</h4><ul><li><a href="tel:9542340932">954-234-0932</a></li><li><a href="/cdn-cgi/l/email-protection#a0c9cec6cfe0d0cfd2c3c5ccc1c9ced3ccc1c2d3c5d2d6c9c3c5d38ec3cfcd">info@porcelain<br>slabservices.com</a></li><li><a href="#contact">Free Estimate</a></li></ul></div>
 </div>
 <div class="footer-bottom"><p>&copy; 2026 Porcelain Slab Services. Rich Smith Enterprises, Inc. All rights reserved.</p><p>Licensed &amp; Insured &bull; NTCA Member</p></div>
 </div>
 </footer>
 
-<script>
-const obs=new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target)}})},{threshold:0.1});
-document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
-</script>
-</body>
-</html>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/
