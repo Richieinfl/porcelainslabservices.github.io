@@ -477,12 +477,12 @@ img{max-width:100%;height:auto;display:block}
       <p>Submit your request and we'll respond within one business day. We'll schedule a call or site visit to discuss your vision, review the space, and answer questions. You'll receive a detailed estimate with scope, timeline, and pricing.</p>
     </div>
   </div>
-  <form class="contact-form reveal" onsubmit="event.preventDefault();alert('Thank you! We will be in touch within 24 hours.');">
-    <div class="f-row"><div class="fg"><label>Name</label><input type="text" placeholder="Your name" required></div><div class="fg"><label>Phone</label><input type="tel" placeholder="(555) 555-5555" required></div></div>
-    <div class="fg"><label>Email</label><input type="email" placeholder="your@email.com" required></div>
+  <form class="contact-form reveal" id="contact-form" onsubmit="event.preventDefault();var n=this.querySelector('[name=name]').value;var p=this.querySelector('[name=phone]').value;var e=this.querySelector('[name=email]').value;var c=this.querySelector('[name=city]').value;var m=this.querySelector('[name=message]').value;var body='Name: '+n+'%0APhone: '+p+'%0AEmail: '+e+'%0ACity: '+c+'%0A%0AProject Details:%0A'+m;window.open('mailto:info@porcelainslabservices.com?subject=New Estimate Request from Website&body='+body);this.innerHTML='<div style=\'text-align:center;padding:60px 20px\';><h3 style=\'color:var(--gold);margin-bottom:16px\'>Thank You!</h3><p style=\'color:rgba(255,255,255,.7)\'>Your email app should open with the form details. If it didn\'t, please call us directly at <a href=\'tel:9542340932\' style=\'color:var(--gold)\'>954-234-0932</a> or email <a href=\'mailto:info@porcelainslabservices.com\' style=\'color:var(--gold)\'>info@porcelainslabservices.com</a></p></div>';">
+    <div class="f-row"><div class="fg"><label>Name</label><input type="text" name="name" placeholder="Your name" required></div><div class="fg"><label>Phone</label><input type="tel" name="phone" placeholder="(555) 555-5555" required></div></div>
+    <div class="fg"><label>Email</label><input type="email" name="email" placeholder="your@email.com" required></div>
     <div class="f-row"><div class="fg"><label>I Am A</label><select required><option value="">Select one...</option><option>Homeowner</option><option>Interior Designer</option><option>Architect</option><option>Builder / GC</option><option>Property Manager</option><option>Other</option></select></div><div class="fg"><label>Project Type</label><select required><option value="">Select one...</option><option>Shower</option><option>Feature Wall</option><option>Fireplace</option><option>Flooring</option><option>Commercial</option><option>Multiple Areas</option><option>Other</option></select></div></div>
-    <div class="fg"><label>City or Zip Code</label><input type="text" placeholder="e.g. Fort Lauderdale or 33308" required></div>
-    <div class="fg"><label>Tell Us About Your Project</label><textarea placeholder="Describe your project, timeline, materials..."></textarea></div>
+    <div class="fg"><label>City or Zip Code</label><input type="text" name="city" placeholder="e.g. Fort Lauderdale or 33308" required></div>
+    <div class="fg"><label>Tell Us About Your Project</label><textarea name="message" placeholder="Describe your project, timeline, materials..."></textarea></div>
     <div><button type="submit" class="btn btn-gold" style="width:100%;text-align:center">Request My Free Estimate</button></div>
   </form>
 </div>
